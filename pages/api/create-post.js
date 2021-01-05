@@ -9,7 +9,7 @@ export default async (req, res) => {
       INSERT INTO posts (content)
       VALUES (?)
       `,
-      [content]
+      content
     )
     return res.json(results)
   } catch (e) {
