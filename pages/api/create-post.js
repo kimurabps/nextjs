@@ -1,6 +1,6 @@
 import { query } from '../../lib/db'
 
-export default (req, res) => {
+export default async (req, res) => {
   // const { content } = req.body
   const content = 'test';
   try {
