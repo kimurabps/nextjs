@@ -6,7 +6,7 @@ export default function Ssr({ date }) {
   )
 }
 
-Ssr.getServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch('/api/date')
   const json = await res.json()
   return { date: json.date }
