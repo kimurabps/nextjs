@@ -4,7 +4,7 @@ export default (req, res) => {
   // const { content } = req.body
   const content = 'test';
   try {
-    await query(
+    const results = await query(
       `
       INSERT INTO posts (content)
       VALUES (?)
