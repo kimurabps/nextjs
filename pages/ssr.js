@@ -1,5 +1,3 @@
-import fetch from 'isomorphic-unfetch'
-
 export default function Ssr({ datetime }) {
   return (
     <h1>{datetime}</h1>
