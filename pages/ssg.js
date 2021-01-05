@@ -1,5 +1,3 @@
-import fetch from 'isomorphic-unfetch'
-
 export default function Ssg({ datetime }) {
   return (
     <h1>{datetime}</h1>
@@ -7,7 +5,7 @@ export default function Ssg({ datetime }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://worldtimeapi.org/api/timezone/Asia/Tokyo')
+  const res = await fetch('/api/date')
   const json = await res.json()
   return { props: { datetime: json.datetime } }
 }
