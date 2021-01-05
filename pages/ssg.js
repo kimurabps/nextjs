@@ -1,6 +1,6 @@
-export default function Ssg({ datetime }) {
+export default function Ssg({ date }) {
   return (
-    <h1>{datetime}</h1>
+    <h1>{date}</h1>
   )
 }
 
