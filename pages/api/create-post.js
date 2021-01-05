@@ -6,10 +6,8 @@ export default async (req, res) => {
   try {
     const results = await query(
       `
-      INSERT INTO posts (content)
-      VALUES (?)
-      `,
-      content
+      SELECT * FROM posts
+      `
     )
     return res.json(results)
   } catch (e) {
