@@ -7,7 +7,7 @@ export default function Ssr({ date }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch('https://nextjs-xi-pied.vercel.app/api/date')
+  const res = await fetch('http://worldtimeapi.org/api/timezone/Asia/Tokyo')
   const json = await res.json()
   return { date: json.date }
 }
