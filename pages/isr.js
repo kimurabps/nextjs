@@ -1,6 +1,6 @@
-export default function Isr({ datetime }) {
+export default function Isr({ date }) {
   return (
-    <h1>{datetime}</h1>
+    <h1>{date}</h1>
   )
 }
 
