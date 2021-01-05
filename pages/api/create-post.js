@@ -7,8 +7,8 @@ export default async (req, res) => {
     const results = await query(
       `
       INSERT INTO posts (content)
-      VALUES (?)	      `
-      `,	
+      VALUES (?)
+      `,
       [content]
     )
     return res.json(results)
