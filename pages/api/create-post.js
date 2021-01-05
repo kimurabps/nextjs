@@ -1,8 +1,8 @@
 import { query } from '../../lib/db'
 
 export default (req, res) => {
-  res.statusCode = 200
-  const { content } = req.body
+  // const { content } = req.body
+  const content = 'test';
   try {
     await query(
       `
