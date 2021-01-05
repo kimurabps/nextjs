@@ -5,6 +5,7 @@ export default async (req, res) => {
   const content = 'test'
   try {
     const results = await query(
+      `
       INSERT INTO posts (content)
       VALUES (?)	      `
       `,	
