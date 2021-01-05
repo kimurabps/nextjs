@@ -1,6 +1,6 @@
-export default function Ssr({ datetime }) {
+export default function Ssr({ date }) {
   return (
-    <h1>{datetime}</h1>
+    <h1>{date}</h1>
   )
 }
 
