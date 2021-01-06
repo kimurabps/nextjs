@@ -1,8 +1,7 @@
 import { query } from '../../lib/db'
 
 export default async (req, res) => {
-  // const { content } = req.body
-  const content = 'test'
+  const { content } = req.body
   try {
     const results = await query(
       `
